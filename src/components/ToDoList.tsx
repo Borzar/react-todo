@@ -1,4 +1,4 @@
-export const TodoList = ({ setTodoList, todoList }: any) => {
+export const TodoList = ({ deleteTodo, setTodoList, todoList }: any) => {
   return (
     <div className='todo-app-list'>
       <ul style={{ padding: 0 }}>
@@ -35,13 +35,7 @@ export const TodoList = ({ setTodoList, todoList }: any) => {
             </span>
             <button
               className='btn btn-danger'
-              onClick={() =>
-                setTodoList(
-                  todoList.filter(
-                    (filterTodoList: any) => filterTodoList.id !== todoItem.id
-                  )
-                )
-              }
+              onClick={() => deleteTodo(todoItem)}
               type='button'
             >
               delete
