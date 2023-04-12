@@ -22,6 +22,7 @@ export const TodoList = ({ deleteTodo, setTodoList, todoList }: any) => {
               }}
               checked={todoItem.checked}
               type='checkbox'
+              className='form-check-input'
             />
             <span
               style={{
@@ -38,7 +39,7 @@ export const TodoList = ({ deleteTodo, setTodoList, todoList }: any) => {
               onClick={() => deleteTodo(todoItem)}
               type='button'
             >
-              delete
+              <i className='bi bi-trash'></i>
             </button>
           </li>
         ))}
