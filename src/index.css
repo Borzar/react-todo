@@ -1,9 +1,7 @@
 body {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: white;
   margin: 0;
   padding: 0;
-  background-color: rgba(50, 50, 50);
+  background-color: #002766;
 }
 
 .hasStyle {
@@ -11,7 +9,7 @@ body {
   color: #69b262;
 }
 
-.todo-app-container {
+/* .todo-app-container {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -23,7 +21,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
+} */
 
 @media (max-width: 768px) {
   .todo-app-container {
@@ -31,7 +29,7 @@ body {
   }
 }
 
-.todo-app-add {
+/* .todo-app-add {
   background-color: #1a1a1a;
   border-radius: 12px;
   padding: 12px;
@@ -43,4 +41,4 @@ body {
   flex-direction: column;
   background-color: #1a1a1a;
   padding: 12px;
-}
+} */
